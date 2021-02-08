@@ -30,7 +30,7 @@ function Nav() {
         <img
           className="nav_avatar"
           src="https://pbs.twimg.com/profile_images/1240119990411550720/hBEe3tdn.png"
-          alt=""
+          alt="https://www.google.com/imgres?imgurl=https%3A%2F%2Ficon2.cleanpng.com%2F20180319%2Frow%2Fkisspng-computer-icons-google-account-user-profile-iconfin-png-icons-download-profile-5ab0301d8907a6.3404305715214960935613.jpg&imgrefurl=https%3A%2F%2Fwww.cleanpng.com%2Ffree%2Fuser-profile.html&tbnid=pExwfCYw8yAAIM&vet=12ahUKEwjEuJuF-dnuAhXt4IUKHfMVCl0QMygCegUIARCrAQ..i&docid=_VqasVaKWpBq8M&w=260&h=260&q=png%20profiles%20images&client=ubuntu&ved=2ahUKEwjEuJuF-dnuAhXt4IUKHfMVCl0QMygCegUIARCrAQ"
         />
       </div>
     </div>
