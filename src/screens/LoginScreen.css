@@ -9,12 +9,14 @@
 .loginScreen_body{
   position: absolute;
   top: 32%;
-  margin-left: 10%;
+  margin-left: auto;
   margin-right: auto;
   text-align: center;
   z-index: 1;
   color: #fff;
   padding: 20px;
+  left: 0;
+  right: 0;
 }
 
 .loginScreen_body > h1 {
@@ -40,7 +42,7 @@
   background: rgba(0, 0, 0, 0.4);
   background-image: linear-gradient(
     to top,
-    rgba(0,0,0,0.8) 0,
+    rgba(0,0,0,0.8) 10,
     rgba(0,0,0,0) 60%,
     rgba(0,0,0,0.8) 100%,
   );
@@ -49,8 +51,8 @@
 .loginScreen_button {
   position: fixed;
   right: 20px;
-  top: 20px;
-  padding: 10px 15px;
+  top: 18px;
+  padding: 2px 10px;
   font-size: 1rem;
   color: #fff;
   background-color: #e50914;
@@ -70,14 +72,13 @@
   padding: 10px;
   outline-width: 0;
   height: 25px;
-  width: 25%;
+  width: 30%;
   border: none;
   max-width: 600px;
 }
 
 .loginScreen_getStarted {
-  padding: 10px 22px;
-  height: auto;
+  padding:  16px 20px; /*space inside the box*/
   font-size: 1rem;
   color: #fff;
   background-color: #e50914;

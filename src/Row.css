@@ -1,6 +1,7 @@
 .row{
   color: white;
   margin-left: 20px;
+  max-height: 200px;
 }
 
 .row_posters {
@@ -15,9 +16,9 @@
 }
 
 .row_poster {
-  max-height: 100px;
+  max-height: fit-content;
   object-fit: contain;
-  /* overflow-x: scroll; */
+  overflow-x: scroll;
   margin-right: 10px;
   width: 100%;
   transition: transform 450ms;
@@ -33,7 +34,11 @@
   max-height: 220px;
 }
 
-.row_posterLarge:hover {
+.row_posterLarge :hover {
   transform: scale(1.10);
   opacity: 1;
+}
+
+.row_poster {
+  max-height: fit-content;
 }
