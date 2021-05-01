@@ -1,11 +1,11 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import "./SignUpScreen.css"
 import {auth} from "../firebase";
 
 function SignUpScreen() {
 
-  const emailRef ="" /*useRef(null)*/;
-  const passwordRef = "" /*useRef(null)*/;
+  const emailRef = useRef(null);
+  const passwordRef =  useRef(null);
 
   const register =  (e) => {
     e.preventDefault(); //avoids button auto refresh
@@ -21,6 +21,14 @@ function SignUpScreen() {
 
   const signIn = (e) => {
     e.preventDefault();
+    auth.signInWithEmailAndPassword(
+      emailRef.current.value,
+      passwordRef.current.value
+    ).then((authUser) => {
+      console.log(authUser);
+    }).catch((error) => {
+      alert(error.message);
+    });
   }
 
   return (
